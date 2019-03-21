@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WORDCOUNT</title>
+</head>
+<body>
+    <a href="{% url 'about' %}">About page</a>
+    <h1>WORDCOUNT LEARNING APP</h1>
+
+    <br>
+
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="5" name ="fulltext"></textarea>
+         <br>
+         <br>
+        <input type="submit" value="Count!"/>
+    </form>
+
+</body>
+</html>
